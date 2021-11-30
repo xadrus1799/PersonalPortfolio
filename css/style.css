@@ -7,6 +7,34 @@ VERSION:	Versoin Number
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
+
+/* cv */
+#cv-row {
+  margin: auto;
+  text-align:left;
+  width: 57.69em;
+}
+
+#inner-cv {
+  padding: 10px 80Px;
+  margin: 80px auto;
+  border: solid #666; border-width: 8px 0 2px 0;
+}
+
+#head {
+  margin: 2.5em 0 3em 0;
+  padding-bottom: 1.5em;
+  border-bottom: 1px solid #ccc
+}
+
+.row-right-cv {
+  float: left;
+}
+
+div.first {
+  float: left;
+}
+
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
 @font-face {
