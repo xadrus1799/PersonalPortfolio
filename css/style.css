@@ -35,6 +35,21 @@ div.first {
   float: left;
 }
 
+#body {
+  margin-bottom: 2em;
+}
+
+#main-body {
+  position: static;
+}
+
+/* typography cv */
+.enlarge{
+  font-size: 144%;
+  padding-right: 6.5em;
+  line-height: 24px;
+}
+
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
 @font-face {
