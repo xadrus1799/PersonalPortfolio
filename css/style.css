@@ -526,19 +526,27 @@ textarea.form-control {
   z-index: 1;
 }
 
-#l1 {
-  bottom: 0;
-  left: 0;
+#l1 { 
+  bottom: 0px;
+  left: 0px;
 }
 
 #l2 {
-  top: 190px;
-  left: -250px;
+  margin-top: 50%;
+  margin-left: 20%;
+  position: absolute;
+  background-color: red;
+}
+.l2{
+  width: 50%;
+  height: auto;
 }
 
 #l3 {
-  top: 200px;
-  left: 40%;
+  margin-top: 0%;
+  margin-left: 0%;
+  position: absolute;
+  background-color: red;
 }
 
 #l4 {
