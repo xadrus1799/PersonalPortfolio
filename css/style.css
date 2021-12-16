@@ -529,26 +529,27 @@ textarea.form-control {
   z-index: 1;
 }
 
-#l1 { 
+#l11 { 
   bottom: 0px;
   left: 0px;
 }
 
 /* saturn */
-#l2 {
-  margin-top: -20%;
-  margin-left: 30%;
+#l21 {
+  margin-top: -20% !important;
+  margin-left: 30% !important;
   position: absolute;
   background-color: red;
+  
 }
 .l2{
   width: 200px;
   height: auto;
 }
 
-#l3 {
-  margin-top: -20%;
-  margin-left: 0%;
+#l31 {
+  margin-top: -20% !important;
+  margin-left: 0% !important;
   position: absolute;
   background-color: blue;
 }
@@ -557,34 +558,34 @@ textarea.form-control {
   height: auto;
 }
 
-#l4 {
-  top: 200px;
-  right: 40%;
+#l41 {
+  top: 200px ;
+  right: 40% ;
 }
 
-#l5 {
-  top: 100px;
-  right: -150px;
+#l51 {
+  top: 100px ;
+  right: -150px ;
 }
 
-#l6 {
-  bottom: -20px;
-  left: 10%;
+#l61 {
+  bottom: -20px ;
+  left: 10% ;
 }
 
-#l7 {
-  bottom: 100px;
-  left: 20%;
+#l71 {
+  bottom: 100px ;
+  left: 20% ;
 }
 
-#l8 {
-  bottom: 160px;
-  right: 45%;
+#l81 {
+  bottom: 160px ;
+  right: 45% ;
 }
 
-#l9 {
-  bottom: 100px;
-  right: -10px;
+#l91 {
+  bottom: 100px ;
+  right: -10px ;
 }
 
 .layer-bg {
