@@ -536,10 +536,10 @@ textarea.form-control {
 
 /* saturn */
 #l21 {
-  margin-top: -20% !important;
-  margin-left: 30% !important;
+  margin-top: -18%;
+  margin-left: 70%;
   position: absolute;
-  background-color: red;
+  /*background-color: red;*/
   
 }
 .l2{
@@ -548,10 +548,10 @@ textarea.form-control {
 }
 
 #l31 {
-  margin-top: -20% !important;
-  margin-left: 0% !important;
+  margin-top: -20%;
+  margin-left: 25%;
   position: absolute;
-  background-color: blue;
+  /*background-color: blue;*/
 }
 .l3{
   width: 200px;
@@ -559,13 +559,24 @@ textarea.form-control {
 }
 
 #l41 {
-  top: 200px ;
-  right: 40% ;
+  top: 290px;
+  left: 45%;
+  position: absolute;
+  /*background-color: yellow;*/
+}
+.l4{
+  width: 200px;
+  height: auto;
 }
 
 #l51 {
-  top: 100px ;
-  right: -150px ;
+  margin-top: -23%;
+  margin-left: 0;
+  /*background-color: green;*/
+}
+.l5{
+  width: 300px;
+  height: auto;
 }
 
 #l61 {
