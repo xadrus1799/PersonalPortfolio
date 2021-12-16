@@ -503,6 +503,8 @@ textarea.form-control {
 .hero-area {
   padding: 300px 0 200px;
   position: relative;
+  background-color: black;
+  height: 100vh;
 }
 
 .hashtags {
@@ -521,6 +523,7 @@ textarea.form-control {
   z-index: 2;
 }
 
+/* use position: absolute; + margin um den Content von ihrer Ursprungsposition wegzubewegen */
 .layer {
   position: absolute;
   z-index: 1;
@@ -531,22 +534,27 @@ textarea.form-control {
   left: 0px;
 }
 
+/* saturn */
 #l2 {
-  margin-top: 50%;
-  margin-left: 20%;
+  margin-top: -20%;
+  margin-left: 30%;
   position: absolute;
   background-color: red;
 }
 .l2{
-  width: 50%;
+  width: 200px;
   height: auto;
 }
 
 #l3 {
-  margin-top: 0%;
+  margin-top: -20%;
   margin-left: 0%;
   position: absolute;
-  background-color: red;
+  background-color: blue;
+}
+.l3{
+  width: 200px;
+  height: auto;
 }
 
 #l4 {
