@@ -7,49 +7,6 @@ VERSION:	Versoin Number
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
-
-/* cv */
-#cv-row {
-  margin: auto;
-  text-align:left;
-  width: 57.69em;
-}
-
-#inner-cv {
-  padding: 10px 80Px;
-  margin: 80px auto;
-  border: solid #666; border-width: 8px 0 2px 0;
-}
-
-#head {
-  margin: 2.5em 0 3em 0;
-  padding-bottom: 1.5em;
-  border-bottom: 1px solid #ccc
-}
-
-.row-right-cv {
-  float: left;
-}
-
-div.first {
-  float: left;
-}
-
-#body {
-  margin-bottom: 2em;
-}
-
-#main-body {
-  position: static;
-}
-
-/* typography cv */
-.enlarge{
-  font-size: 144%;
-  padding-right: 6.5em;
-  line-height: 24px;
-}
-
 /*  typography */
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Roboto:300,400,500,700");
 @font-face {
@@ -185,11 +142,6 @@ h6, .h6 {
 body {
   background-color: #fff;
   overflow-x: hidden;
-}
-
-::-moz-selection {
-  background: #542cb7;
-  color: #fff;
 }
 
 ::selection {
@@ -503,16 +455,6 @@ textarea.form-control {
 .hero-area {
   padding: 300px 0 200px;
   position: relative;
-  background-color: black;
-  height: 100vh;
-}
-.hero-area .position{
-  
-
-}
-
-.hashtags {
-  color: #41228e;
 }
 
 @media (max-width: 767px) {
@@ -527,79 +469,54 @@ textarea.form-control {
   z-index: 2;
 }
 
-/* use position: absolute; + margin um den Content von ihrer Ursprungsposition wegzubewegen */
 .layer {
   position: absolute;
   z-index: 1;
 }
 
-
-/* saturn */
-#l21 {
-  margin-top: 2%;
-  margin-left: 80%;
-  position: absolute;
-  /*background-color: blue;*/
-  
-}
-.l2{
-  width: 200px;
-  height: auto;
+#l1 {
+  bottom: 0;
+  left: 0;
 }
 
-/* venus */
-#l31 {
-  margin-top: 0%;
-  margin-left: 60%;
-  position: absolute;
-  /*background-color: green;*/
-}
-.l3{
-  width: 200px;
-  height: auto;
+#l2 {
+  top: 190px;
+  left: -250px;
 }
 
-/* sun */
-#l41 {
-  top: 58%;
-  left: -5%;
-  position: absolute;
-  /*background-color: yellow;*/
-}
-.l4{
-  width: 350px;
-  height: auto;
+#l3 {
+  top: 200px;
+  left: 40%;
 }
 
-/* earth */
-#l51 {
-  margin-top: -3%;
-  margin-left: 30%;
-  /*background-color: white;*/
-}
-.l5{
-  width: 250px;
-  height: auto;
+#l4 {
+  top: 200px;
+  right: 40%;
 }
 
-#l61 {
-  bottom: -20px ;
-  left: 10% ;
+#l5 {
+  top: 100px;
+  right: -150px;
 }
 
-#l71 {
-  bottom: 100px ;
-  left: 20% ;
+#l6 {
+  bottom: -20px;
+  left: 10%;
 }
 
-#l81 {
-  bottom: 160px ;
-  right: 45% ;
+#l7 {
+  bottom: 100px;
+  left: 20%;
 }
 
-#l91 {
-  bottom: 100px ;
-  right: -10px ;
+#l8 {
+  bottom: 160px;
+  right: 45%;
+}
+
+#l9 {
+  bottom: 100px;
+  right: -10px;
 }
 
 .layer-bg {
@@ -629,42 +546,25 @@ textarea.form-control {
   left: 50%;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 45%;
-  -webkit-transform: translateX(-50%) rotate(0);
-          transform: translateX(-50%) rotate(0);
-  -webkit-animation: rotate 6s linear infinite;
-          animation: rotate 6s linear infinite;
+  transform: translateX(-50%) rotate(0);
+  animation: rotate 6s linear infinite;
   z-index: 10;
 }
 
 .wave::after {
   border-radius: 47%;
   background-color: rgba(255, 255, 255, 0.9);
-  -webkit-transform: translateX(-50%) rotate(0);
-          transform: translateX(-50%) rotate(0);
-  -webkit-animation: rotate 10s linear -5s infinite;
-          animation: rotate 10s linear -5s infinite;
+  transform: translateX(-50%) rotate(0);
+  animation: rotate 10s linear -5s infinite;
   z-index: 20;
-}
-
-@-webkit-keyframes rotate {
-  50% {
-    -webkit-transform: translateX(-50%) rotate(180deg);
-            transform: translateX(-50%) rotate(180deg);
-  }
-  100% {
-    -webkit-transform: translateX(-50%) rotate(360deg);
-            transform: translateX(-50%) rotate(360deg);
-  }
 }
 
 @keyframes rotate {
   50% {
-    -webkit-transform: translateX(-50%) rotate(180deg);
-            transform: translateX(-50%) rotate(180deg);
+    transform: translateX(-50%) rotate(180deg);
   }
   100% {
-    -webkit-transform: translateX(-50%) rotate(360deg);
-            transform: translateX(-50%) rotate(360deg);
+    transform: translateX(-50%) rotate(360deg);
   }
 }
 
@@ -716,13 +616,11 @@ textarea.form-control {
 
 .hover-wrapper img {
   transition: .3s ease;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .hover-wrapper:hover img {
-  -webkit-transform: scale(1);
-          transform: scale(1);
+  transform: scale(1);
 }
 
 .hover-wrapper:hover .hover-overlay {
@@ -746,8 +644,7 @@ textarea.form-control {
 .hover-content {
   position: absolute;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   left: 0;
   right: 0;
   text-align: center;
@@ -769,8 +666,7 @@ textarea.form-control {
   position: absolute;
   left: 50%;
   top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .testimonial-bg-shapes .bg-shape-1 {
@@ -806,7 +702,7 @@ textarea.form-control {
 /* /testimonial */
 /* footer */
 .footer-section {
-  padding-top: 0px;
+  padding-top: 200px;
 }
 
 .section-on-footer {
@@ -902,8 +798,7 @@ blockquote {
   position: absolute;
   left: 30%;
   top: 50px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .page-title-alt .bg-shape-4 {
@@ -962,8 +857,7 @@ blockquote {
   position: absolute;
   left: 90px;
   bottom: -50px;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .page-title .bg-shape-6 {
@@ -985,5 +879,3 @@ blockquote {
 .filter-controls li.active {
   font-weight: bold;
 }
-
-/*# sourceMappingURL=maps/style.css.map */
