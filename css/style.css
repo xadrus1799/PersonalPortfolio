@@ -455,6 +455,12 @@ textarea.form-control {
 .hero-area {
   padding: 300px 0 200px;
   position: relative;
+  background-color: black;
+  height: 100vh;
+}
+
+.hashtags{
+  color: purple;
 }
 
 @media (max-width: 767px) {
