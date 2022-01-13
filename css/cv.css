@@ -1,3 +1,6 @@
+
+/* Lebenslauf */
+
 .ul-cv, .li-cv {
   list-style: none;
   padding: 0;
@@ -7,9 +10,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  /*
   padding: 0 1rem;
   padding: 3rem 0;
+  */
+  margin: 3em;
   text-align: start;
+  border-color: red;
+  border-style: dotted;
 }
 
 .wrapper-cv {
@@ -86,4 +94,13 @@
   .p-cv {
     font-size: .9rem;
   }
+}
+
+
+/*Lebenslauf Download*/
+#test{
+  border-style: dotted;
+  border-color: red;
+  width: 25em;
+  height: 25em;
 }
