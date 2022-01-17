@@ -8,7 +8,7 @@
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  
+
   <!-- ** Plugins Needed for the Project ** -->
   <!-- Bootstrap -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
@@ -21,7 +21,9 @@
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/cv.css" rel="stylesheet">
-  
+  <!-- kute.js animating blob -->
+  <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+  <link href="script.js" rel="javascript">
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
@@ -29,227 +31,266 @@
 </head>
 
 <body>
-  
 
-<header class="navigation fixed-top">
-  <nav class="navbar navbar-expand-lg navbar-dark">
-    <p class="navbar-brand font-tertiary h3">Hübbers Design</p>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
-      aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse text-center" id="navigation">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html" style="color: gray">Über mich</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="portfolio.html">Projekte</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</header>
+  <header class="navigation fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <p class="navbar-brand font-tertiary h3">Hübbers Design</p>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-<!-- page title -->
-<section class="page-title-alt bg-primary position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h1 class="text-white font-tertiary">Meine Vita</h1>
+      <div class="collapse navbar-collapse text-center" id="navigation">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html" style="color: gray">Über mich</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="portfolio.html">Projekte</a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </div>
-  <!-- background shapes -->
-  <img src="images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100">
-  <img src="images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2">
-  <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3">
-  <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
-  <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5">
-</section>
-<!-- /page title -->
+    </nav>
+  </header>
 
-<!-- about -->
-<section class="section pt-5">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8">
-        <p>Bereits im Informatik Unterricht in der 6ten Klasse hatte ich berührungspunkte mit HTML. Die erste Internet-Seite war einfach nur eine 
-          "Hello World" Zeile. Später lebte dieses Interessa dann wieder auf, aus der "Hello World" Zeile, wurden so WordPress Seiten und aus den Wordpress Seiten wurden irgendwann 
-          voll personalisiere Internet-Präsenzen.</p>
-        <p>Sowohl Wordpress als auch eine zugeschnittene Seite aus HTML und CSS bieten für sich genommen als Lösung immer ihre eigenen Vorteile! Durch meine Erfahrung, gewonnen durch verschiedene
-          Projekte sowie Weiterbildungen und Zertifikate, kann ich Ihnen sowohl die Vorteile einer WordPress Seite bieten, als auch die Vorteile einer, auf Ihr Unternehmen, zugeschnittenen Seite bestehend aus HTML und CSS. 
-          </p>
-        </p>
-        </p>
-      </div>
-      <div class="col-md-4 text-center drag-lg-top">
-        <div class="shadow-down mb-4">
-          <img src="images/about/author.jpg" alt="author" class="img-fluid w-100 rounded-lg border-thick border-white">
-        </div>
-        <img src="images/about/signature.png" alt="signature" class="img-fluid">
-        <h4>Cedric Hübbers</h4>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- /about -->
-
-
-<!-- CV - Lebenslauf -->
-<div class="container">
-  <div class="row">
-
-     <div class="col-lg-12 text-center">
-        <h2 class="section-title">Lebenslauf</h2>
-     </div>
-
-     <div class="container-cv">
-        <div class="wrapper-cv">
-           <h1 class="h1-cv">CV - Cedric Hübbers</h1>
-           <ul class="sessions ul-cv">
-              <li class="li-cv">
-                 <div class="time-cv">2022 - heute</div>
-                 <p class="p-cv">Freelancer Web-Entwickler</p>
-              </li>
-              <li class="li-cv">
-                 <div class="time-cv">2022 - heute</div>
-                 <p class="p-cv">Ausbildung Web-Entwickler</p>
-              </li>
-              <li class="li-cv">
-                 <div class="time-cv">07.2021 - heute</div>
-                 <p class="p-cv">Bürosachbearbeiter Grundlagen<br>Zentrum Luft Operationen - Bundeswehr</p>
-              </li>
-              <li class="li-cv">
-                 <div class="time-cv">09.2019 - 07.2021</div>
-                 <p class="p-cv">Bürosachbearbeiter Finanzen<br>Bundeswehrdienstleistungszentrum Münster - Bundeswehr</p>
-              </li>
-              <li class="li-cv">
-                 <div class="time-cv">08.2016 - 08.2019</div>
-                 <p class="p-cv">Ausbildung zum Verwaltungsfachangestellten<br>Bundeswehrdienstleistungszentrum Münster - Bundeswehr</p>
-              </li>
-              <li class="li-cv">
-                 <div class="time-cv">09.2015 - 07.2016 </div>
-                 <p class="p-cv">Riegel IT <br>IT-System-Kaufmann</p>
-              </li>
-              <li class="li-cv">
-                 <div class="time-cv">10.2014 - 07.2015</div>
-                 <p class="p-cv">ABC GmbH <br> IT-System-Kaufmann</p>
-              </li>
-           </ul>
-        </div>
-     </div>
-
-     <!-- ToDo: animated bubbles with svg path / kute.js tutorial @ fireship.io-->
-     <div class="container-cv">
-       <div id="test">
-         <svg id="sw-js-blob-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-           <defs>
-             <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
-               <stop id="stop1" stop-color="rgba(182.35, 55, 248, 1)" offset="0%"></stop>
-               <stop id="stop2" stop-color="rgba(65, 34, 142, 1)" offset="100%"></stop>
-              </linearGradient>
-            </defs>
-            <path fill="url(#sw-gradient)" d="M28.6,-22.1C33.2,-17,30.5,-5.3,28.1,6.8C25.6,19,23.5,31.7,16.8,34.8C10.2,38,-1,31.6,-11.2,25.7C-21.5,19.9,-30.8,14.5,-34.3,5.9C-37.8,-2.7,-35.5,-14.6,-28.9,-20.2C-22.2,-25.7,-11.1,-24.9,0.4,-25.3C12,-25.6,24,-27.1,28.6,-22.1Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s;" stroke="url(#sw-gradient)">
-         </path>
-        </svg>
-       </div>
-     </div>
-
-  </div>
-</div>
-
-
-
-<!-- /CV - Lebenslauf -->
-
-
-<!-- Zerttifikate start -->
-<section class="section position-relative">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12 text-center">
-        <h2 class="section-title">Zertifikate</h2>
-      </div>
-      <div class="col-lg-6 col-md-6 mb-80">
-        <div class="d-flex">
-          <div class="mr-lg-5 mr-3">
-            <img src="images/certs/html1.png" style="width: 150px">
-          </div>
-          <div>
-            <p class="text-dark mb-1">2021</p>
-            <h4>HTML Basic Course</h4>
-            <p class="mb-0 text-light">Codeacademy</p>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-6 col-md-6 mb-80">
-        <div class="d-flex">
-          <div class="mr-lg-5 mr-3">
-            <img src="images/certs/css1.png" style="width: 150px">
-          </div>
-          <div>
-            <p class="text-dark mb-1">2021</p>
-            <h4>CSS Basic Course</h4>
-            <p class="mb-0 text-light">Codeacademy</p>
-          </div>
-        </div>
-      </div>
-  
-    </div>
-  </div>
-  <!-- bg image -->
-  <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
-</section>
-<!-- Zertifikate ende -->
-
-
-
-<!-- footer -->
-<footer class="bg-dark footer-section">
-  <div class="section">
+  <!-- page title -->
+  <section class="page-title-alt bg-primary position-relative">
     <div class="container">
       <div class="row">
-        <div class="col-md-4">
-          <h5 class="text-light">Email</h5>
-          <p class="text-white paragraph-lg font-secondary">Platzhalter</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Phone</h5>
-          <p class="text-white paragraph-lg font-secondary">Platzhalter</p>
-        </div>
-        <div class="col-md-4">
-          <h5 class="text-light">Address</h5>
-          <p class="text-white paragraph-lg font-secondary">Platzhalter</p>
+        <div class="col-12">
+          <h1 class="text-white font-tertiary">Meine Vita</h1>
         </div>
       </div>
     </div>
+    <!-- background shapes -->
+    <img src="images/illustrations/leaf-bg-top.png" alt="illustrations" class="bg-shape-1 w-100">
+    <img src="images/illustrations/dots-group-sm.png" alt="illustrations" class="bg-shape-2">
+    <img src="images/illustrations/leaf-yellow.png" alt="illustrations" class="bg-shape-3">
+    <img src="images/illustrations/leaf-orange.png" alt="illustrations" class="bg-shape-4">
+    <img src="images/illustrations/dots-group-cyan.png" alt="illustrations" class="bg-shape-5">
+  </section>
+  <!-- /page title -->
+
+  <!-- about -->
+  <section class="section pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>Bereits im Informatik Unterricht in der 6ten Klasse hatte ich berührungspunkte mit HTML. Die erste
+            Internet-Seite war einfach nur eine
+            "Hello World" Zeile. Später lebte dieses Interessa dann wieder auf, aus der "Hello World" Zeile, wurden so
+            WordPress Seiten und aus den Wordpress Seiten wurden irgendwann
+            voll personalisiere Internet-Präsenzen.</p>
+          <p>Sowohl Wordpress als auch eine zugeschnittene Seite aus HTML und CSS bieten für sich genommen als Lösung
+            immer ihre eigenen Vorteile! Durch meine Erfahrung, gewonnen durch verschiedene
+            Projekte sowie Weiterbildungen und Zertifikate, kann ich Ihnen sowohl die Vorteile einer WordPress Seite
+            bieten, als auch die Vorteile einer, auf Ihr Unternehmen, zugeschnittenen Seite bestehend aus HTML und CSS.
+          </p>
+          </p>
+          </p>
+        </div>
+        <div class="col-md-4 text-center drag-lg-top">
+          <div class="shadow-down mb-4">
+            <img src="images/about/author.jpg" alt="author"
+              class="img-fluid w-100 rounded-lg border-thick border-white">
+          </div>
+          <img src="images/about/signature.png" alt="signature" class="img-fluid">
+          <h4>Cedric Hübbers</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- /about -->
+
+
+  <!-- CV - Lebenslauf -->
+  <div class="container">
+    <div class="row">
+
+      <div class="col-lg-12 text-center">
+        <h2 class="section-title">Lebenslauf</h2>
+      </div>
+
+      <div class="container-cv">
+        <div class="wrapper-cv">
+          <h1 class="h1-cv">CV - Cedric Hübbers</h1>
+          <ul class="sessions ul-cv">
+            <li class="li-cv">
+              <div class="time-cv">2022 - heute</div>
+              <p class="p-cv">Freelancer Web-Entwickler</p>
+            </li>
+            <li class="li-cv">
+              <div class="time-cv">2022 - heute</div>
+              <p class="p-cv">Ausbildung Web-Entwickler</p>
+            </li>
+            <li class="li-cv">
+              <div class="time-cv">07.2021 - heute</div>
+              <p class="p-cv">Bürosachbearbeiter Grundlagen<br>Zentrum Luft Operationen - Bundeswehr</p>
+            </li>
+            <li class="li-cv">
+              <div class="time-cv">09.2019 - 07.2021</div>
+              <p class="p-cv">Bürosachbearbeiter Finanzen<br>Bundeswehrdienstleistungszentrum Münster - Bundeswehr</p>
+            </li>
+            <li class="li-cv">
+              <div class="time-cv">08.2016 - 08.2019</div>
+              <p class="p-cv">Ausbildung zum Verwaltungsfachangestellten<br>Bundeswehrdienstleistungszentrum Münster -
+                Bundeswehr</p>
+            </li>
+            <li class="li-cv">
+              <div class="time-cv">09.2015 - 07.2016 </div>
+              <p class="p-cv">Riegel IT <br>IT-System-Kaufmann</p>
+            </li>
+            <li class="li-cv">
+              <div class="time-cv">10.2014 - 07.2015</div>
+              <p class="p-cv">ABC GmbH <br> IT-System-Kaufmann</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ToDo: animated bubbles with svg path / kute.js tutorial @ fireship.io-->
+      <div class="container-cv">
+
+        <div id="test">
+          <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+
+            <g transform="translate(476.3175949962143 319.7823664407324)">
+              <path id="blob1"
+                d="M151.4 -192.4C183.2 -153.7 187.1 -93.7 195.7 -35.9C204.2 21.9 217.3 77.4 197.3 115.8C177.4 154.1 124.4 175.3 73.3 188.2C22.1 201.1 -27.2 205.8 -76.7 194.7C-126.1 183.7 -175.6 156.8 -212.1 113.1C-248.6 69.3 -272 8.6 -254.6 -37C-237.1 -82.6 -178.8 -113.1 -129.6 -148.8C-80.4 -184.4 -40.2 -225.2 9.8 -236.9C59.8 -248.6 119.6 -231.2 151.4 -192.4"
+                fill="#41228e" opacity="0.3">
+              </path>
+            </g>
+
+            <g transform="translate(429.9019862576224 285.17129635293975)" style="visibility: hidden;">
+              <path id="blob2"
+                d="M125.8 -144.6C171.3 -111.8 222 -79.9 240.2 -33.9C258.4 12.1 243.9 72.3 215.6 127.3C187.2 182.3 144.9 232.1 95.8 239.9C46.6 247.8 -9.3 213.6 -64.6 188.6C-119.8 163.7 -174.2 147.8 -196 112.2C-217.7 76.5 -206.9 21 -189 -25.2C-171.1 -71.3 -146.3 -108 -113.7 -143.1C-81 -178.2 -40.5 -211.6 -0.2 -211.4C40.2 -211.2 80.4 -177.4 125.8 -144.6"
+                fill="#41228e" opacity="0.3">
+              </path>
+            </g>
+
+            <g transform="translate(438.1771181130055 288.24898454420907)" style="visibility: hidden;">
+              <path id="blob3"
+                d="M129.6 -150.8C178.8 -113.1 237.1 -82.6 246.2 -41.8C255.3 -1.1 215.1 50 181.2 100.8C147.3 151.6 119.6 202.2 73.7 231.4C27.8 260.6 -36.4 268.4 -93.3 250.3C-150.2 232.2 -199.8 188.1 -216.7 136.1C-233.6 84.1 -217.7 24.3 -198.9 -26.8C-180 -77.9 -158.1 -120.1 -124.5 -160.5C-90.8 -200.9 -45.4 -239.5 -2.6 -236.3C40.2 -233.2 80.4 -188.4 129.6 -150.8"
+                fill="#41228e" opacity="0.3">
+              </path>
+            </g>
+
+          </svg>
+        </div>
+
+        <script>
+
+          //animation script with KUTE.js
+
+          const blobAnimation = KUTE.fromTo(
+            '#blob1',
+            {path: '#blob1' },
+            {path: '#blob2' },
+            {repeat: 999, duration: 3000, yoyo: true}
+          );
+          blobAnimation.start();
+        </script>
+
+      </div>
+
+    </div>
   </div>
-  <div class="border-top text-center border-dark py-5">
-    <p class="mb-0 text-light">Copyright ©<script>
-        var CurrentYear = new Date().getFullYear()
-        document.write(CurrentYear)
-      </script> Cedric Hübbers</p>
-  </div>
-</footer>
-<!-- /footer -->
 
-<!-- jQuery -->
-<script src="plugins/jQuery/jquery.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="plugins/bootstrap/bootstrap.min.js"></script>
-<!-- slick slider -->
-<script src="plugins/slick/slick.min.js"></script>
-<!-- filter -->
-<script src="plugins/shuffle/shuffle.min.js"></script>
 
-<!-- Main Script -->
-<script src="js/script.js"></script>
 
+  <!-- /CV - Lebenslauf -->
+
+
+  <!-- Zerttifikate start -->
+  <section class="section position-relative">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-title">Zertifikate</h2>
+        </div>
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <img src="images/certs/html1.png" style="width: 150px">
+            </div>
+            <div>
+              <p class="text-dark mb-1">2021</p>
+              <h4>HTML Basic Course</h4>
+              <p class="mb-0 text-light">Codeacademy</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-md-6 mb-80">
+          <div class="d-flex">
+            <div class="mr-lg-5 mr-3">
+              <img src="images/certs/css1.png" style="width: 150px">
+            </div>
+            <div>
+              <p class="text-dark mb-1">2021</p>
+              <h4>CSS Basic Course</h4>
+              <p class="mb-0 text-light">Codeacademy</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <!-- bg image -->
+    <img class="img-fluid edu-bg-image w-100" src="images/backgrounds/education-bg.png" alt="bg-image">
+  </section>
+  <!-- Zertifikate ende -->
+
+
+
+  <!-- footer -->
+  <footer class="bg-dark footer-section">
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5 class="text-light">Email</h5>
+            <p class="text-white paragraph-lg font-secondary">Platzhalter</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Phone</h5>
+            <p class="text-white paragraph-lg font-secondary">Platzhalter</p>
+          </div>
+          <div class="col-md-4">
+            <h5 class="text-light">Address</h5>
+            <p class="text-white paragraph-lg font-secondary">Platzhalter</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="border-top text-center border-dark py-5">
+      <p class="mb-0 text-light">Copyright ©
+        <script>
+          var CurrentYear = new Date().getFullYear()
+          document.write(CurrentYear)
+        </script> Cedric Hübbers
+      </p>
+    </div>
+
+  </footer>
+  <!-- /footer -->
+
+  <!-- jQuery -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <!-- Bootstrap JS -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- slick slider -->
+  <script src="plugins/slick/slick.min.js"></script>
+  <!-- filter -->
+  <script src="plugins/shuffle/shuffle.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
 </body>
+
 </html>
