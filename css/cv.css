@@ -16,8 +16,6 @@
   */
   margin: 3em;
   text-align: start;
-  border-color: red;
-  border-style: dotted;
 }
 
 .wrapper-cv {
@@ -70,18 +68,7 @@
   font-weight: 500;
 }
 
-@media screen and (min-width: 601px) {
-  .time-cv {
-    font-size: .9rem;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .time-cv {
-    margin-bottom: .3rem;
-    font-size: 0.85rem;
-  }
-}
 
 .p-cv {
   color: #4f4f4f;
@@ -90,17 +77,10 @@
   margin-top: 0.4rem;
 }
 
-@media screen and (max-width: 600px) {
-  .p-cv {
-    font-size: .9rem;
-  }
-}
-
 
 /*Lebenslauf Download*/
 #test{
-  border-style: dotted;
-  border-color: red;
+  
   width: 25em;
   height: 25em;
 }
