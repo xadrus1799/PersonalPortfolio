@@ -1,6 +1,10 @@
 
 /* Lebenslauf */
 
+
+.underline {
+  text-decoration: underline;
+}
 .ul-cv, .li-cv {
   list-style: none;
   padding: 0;
@@ -79,9 +83,15 @@
 
 
 /*Lebenslauf Download*/
-#test{
+#blob{
   
   width: 25em;
   height: 25em;
 }
-
+@media (max-width: 1300px) 
+{
+    #blob
+    {
+        display: none;
+    }
+}

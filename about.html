@@ -16,8 +16,11 @@
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <!-- themefy-icon -->
   <link rel="stylesheet" href="plugins/themify-icons/themify-icons.css">
-  <!-- yahoo interface used for cv-->
+
+  <!-- yahoo interface used for cv -->
   <link rel="stylesheet" href="http://yui.yahooapis.com/2.7.0/build/reset-fonts-grids/reset-fonts-grids.css">
+  
+
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/cv.css" rel="stylesheet">
@@ -129,7 +132,8 @@
             </li>
             <li class="li-cv">
               <div class="time-cv">07.2021 - heute</div>
-              <p class="p-cv">Bürosachbearbeiter Grundlagen Übungen und Informatik<br>Zentrum Luft Operationen - Bundeswehr</p>
+              <p class="p-cv">Bürosachbearbeiter Grundlagen Übungen und Informatik<br>Zentrum Luft Operationen -
+                Bundeswehr</p>
             </li>
             <li class="li-cv">
               <div class="time-cv">09.2019 - 07.2021</div>
@@ -155,9 +159,9 @@
       <!-- ToDo: animated bubbles with svg path / kute.js tutorial @ fireship.io-->
       <div class="container-cv">
 
-        <div id="test">
-          <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="500" height="500" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <div id="blob">
+          <svg class="blob-motion" id="visual" viewBox="0 0 900 600" width="500" height="500"
+            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
 
             <g transform="translate(476.3175949962143 319.7823664407324)">
               <path id="blob1"
@@ -189,9 +193,9 @@
 
           const blobAnimation = KUTE.fromTo(
             '#blob1',
-            {path: '#blob1' },
-            {path: '#blob2' },
-            {repeat: 999, duration: 3000, yoyo: true}
+            { path: '#blob1' },
+            { path: '#blob2' },
+            { repeat: 999, duration: 3000, yoyo: true }
           );
           blobAnimation.start();
         </script>
@@ -219,7 +223,7 @@
               <img src="images/certs/html1.png" style="width: 150px">
             </div>
             <div>
-              <p class="text-dark mb-1">2021</p>
+              <p class="text-dark mb-1 underline">2021</p>
               <h4>HTML Basic Course</h4>
               <p class="mb-0 text-light">Codeacademy</p>
             </div>
@@ -232,7 +236,7 @@
               <img src="images/certs/css1.png" style="width: 150px">
             </div>
             <div>
-              <p class="text-dark mb-1">2021</p>
+              <p class="text-dark mb-1 underline">2021</p>
               <h4>CSS Basic Course</h4>
               <p class="mb-0 text-light">Codeacademy</p>
             </div>
@@ -269,10 +273,12 @@
       </div>
     </div>
     <div class="border-top text-center border-dark py-5">
-      <p class="mb-0 text-light">Copyright ©<script>
+      <p class="mb-0 text-light">Copyright ©
+        <script>
           var CurrentYear = new Date().getFullYear()
           document.write(CurrentYear)
-        </script> Cedric Hübbers</p>
+        </script> Cedric Hübbers
+      </p>
     </div>
   </footer>
   <!-- /footer -->
