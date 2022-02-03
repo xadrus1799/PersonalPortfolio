@@ -1,8 +1,8 @@
 /*!------------------------------------------------------------------
 [MAIN STYLESHEET]
 
-PROJECT:	Project Name
-VERSION:	Versoin Number
+PROJECT:	Portfolio
+VERSION:	Final 2022
 -------------------------------------------------------------------*/
 /*------------------------------------------------------------------
 [TABLE OF CONTENTS]
@@ -884,4 +884,8 @@ blockquote {
 
 .filter-controls li.active {
   font-weight: bold;
+}
+
+#dot-header{
+  color:#41228e;
 }
