@@ -206,8 +206,13 @@ a:hover {
 }
 
 .section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 5em;
+  padding-bottom: 5em;
+  
+}
+
+.subsection {
+  margin-bottom: 20em;
 }
 
 .section-title {
