@@ -20,6 +20,7 @@
   <!-- Main Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
   <link href="css/cards.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/nav.css">
 
   <!--Favicon-->
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
@@ -29,23 +30,25 @@
 
 <body>
 
-
+  
   <header class="navigation fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <p class="navbar-brand font-tertiary h3">Hübbers Design<span id="dot-header">.</span></p>
-
-     
-
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
+        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
       <div class="collapse navbar-collapse text-center" id="navigation">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html" style="color: gray">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">Über mich</a>
+            <a class="nav-link" href="about.html">über mich</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Projekte</a>
+            <a class="nav-link" href="portfolio.html" style="color: grey">Projekte</a>
           </li>
         </ul>
       </div>
@@ -497,7 +500,7 @@
 
   <!-- Main Script -->
   <script src="js/script.js"></script>
-  <script src="script.js"></script>
+  <script src="js/navscript.js"></script>
 
 </body>
 
