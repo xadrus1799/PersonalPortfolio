@@ -582,10 +582,9 @@ textarea.form-control {
 /* /skills */
 /* education */
 .edu-bg-image {
+  top: 700px;
   position: absolute;
   left: 0;
-  top: -300px;
-  z-index: -1;
 }
 
 /* /education */
@@ -894,38 +893,91 @@ blockquote {
 #dot-header{
   color:#41228e;
 }
+#dot-header-other{
+  color: white;
+}
 /******
 Moving Hero Animation
 ******/
-.moving-text-wrapper{
-  display: inline-flex;
 
+
+/*wann wird der moving Text Teil gezeigt*/
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  .moving-text-wrapper { display: none; }  /* show it on small screens */
 }
-.moving-text-wrapper .dynamic-texts {
-  margin-left: 2em;
-  overflow: hidden;
-  height: 2em;
-  line-height: 2em;
-  overflow: hidden;
+
+@media screen and (min-width: 1001px) and (max-width: 2000px) {
+  .moving-text-wrapper { display: inline-flex; }   /* hide it elsewhere */
 }
-.dynamic-texts li{
+/*wann wird der static Text Teil gezeigt*/
+@media screen and (min-width: 0px) and (max-width: 1000px) {
+  .static-text-wrapper { display: inline-flex; }  /* show it on small screens */
+}
+
+@media screen and (min-width: 1001px) and (max-width: 2000px) {
+  .static-text-wrapper { display: none; }   /* hide it elsewhere */
+}
+
+
+
+
+
+.static-text-wrapper{
+  /*wird durch die media query befüllt*/
+}
+
+.moving-text-wrapper{
+  /*wird durch die media query befüllt */ 
+}
+
+
+#static-text1 {
   list-style: none; 
-  font-size: 2em;
+  font-size: 5em;
   color: white;
-  /*font-weight: 500;*/
+  font-weight: 500;
+  position: relative;
+  top: -0.5em;
+  left: 0;
+}
+
+
+.moving-text-wrapper .dynamic-texts {
+  height: 5em;
+  line-height: 5em;
+}
+/*Web Entwickler Text*/
+#moving-text1{
+  list-style: none; 
+  font-size: 5em;
+  color: #41228e;
+  font-weight: 500;
   position: relative;
   top: 0;
-  animation: slide 8s steps(4) infinite;
+  left: -0.5em;
+  animation: slide 2s steps(1) infinite;
 }
-@keyframes slide {
-  100%{
-     top: -4em;
-  }
-}
+
 .dynamic-texts li span{
   position: relative;
-
 }
+
+/*Social Media Text*/
+#moving-text2{
+  list-style: none; 
+  font-size: 5em;
+  color: #4295f5;
+  font-weight: 500;
+  position: relative;
+  top: 0;
+  left: -0.5em;
+  animation: slide 6s steps(1) infinite;
+}
+
+.dynamic-texts li span{
+  position: relative;
+}
+
 .dynamic-texts li span::after{
   background: black;
   left: 0;
@@ -941,3 +993,7 @@ Moving Hero Animation
      left: 100%;
   }
 }
+
+/********
+Moving Text Area End
+*********/
