@@ -711,6 +711,13 @@ textarea.form-control {
 
 /* /testimonial */
 /* footer */
+
+.footer-li{
+  display: inline;
+  margin-left: -4em;
+  padding: 2em;
+}
+
 .footer-section {
   padding-top: 100px;
 }
