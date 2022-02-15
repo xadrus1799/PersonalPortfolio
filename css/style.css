@@ -16,12 +16,13 @@ VERSION:	Final 2022
   font-display: swap;
 }
 
+
 body {
   line-height: 1.2;
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  font-size: 15px;
   color: #4c4c4c;
+  font-size: 2vw;
 }
 
 p, .paragraph {
@@ -43,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: 80px;
+  font-size: 4rem;
 }
 
 @media (max-width: 991px) {
@@ -142,6 +143,7 @@ h6, .h6 {
 body {
   background-color: #fff;
   overflow-x: hidden;
+  font-size: 100%;
 }
 
 ::selection {
@@ -917,14 +919,32 @@ Moving Hero Animation
   .moving-text-wrapper { display: inline-flex; }   /* hide it elsewhere */
 }
 /*wann wird der static Text Teil gezeigt*/
-@media screen and (min-width: 0px) and (max-width: 1000px) {
+@media screen and (min-width: 0px) and (max-width: 1080px) {
   .static-text-wrapper { display: inline-flex; }  /* show it on small screens */
 }
 
-@media screen and (min-width: 1001px) and (max-width: 2000px) {
+@media screen and (min-width: 1081px) and (max-width: 2000px) {
   .static-text-wrapper { display: none; }   /* hide it elsewhere */
 }
 
+@media screen and (min-width: 360px) and (max-width: 500px) {
+  #static-text1 { 
+    font-size: 2.5em !important;
+  }
+  .static-text {
+    font-size: 2.5em !important;
+  }
+  .inline-flex {
+    display: inline-flex !important;
+    margin-left: +5px !important;
+  }
+  .mb-3 {
+    margin-left: 0.6em !important;
+  }
+  .mobile-header {
+    font-size: 2em !important;
+  }
+}
 
 
 
@@ -940,7 +960,7 @@ Moving Hero Animation
 
 #static-text1 {
   list-style: none; 
-  font-size: 5em;
+  font-size: 4em;
   color: white;
   font-weight: 500;
   position: relative;
@@ -956,7 +976,7 @@ Moving Hero Animation
 /*Web Entwickler Text*/
 #moving-text1{
   list-style: none; 
-  font-size: 5em;
+  font-size: 4em;
   color: #41228e;
   font-weight: 500;
   position: relative;
@@ -972,7 +992,7 @@ Moving Hero Animation
 /*Social Media Text*/
 #moving-text2{
   list-style: none; 
-  font-size: 5em;
+  font-size: 4rem;
   color: #4295f5;
   font-weight: 500;
   position: relative;
