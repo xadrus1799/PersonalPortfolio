@@ -210,7 +210,9 @@ a:hover {
 .section {
   padding-top: 3em;
   padding-bottom: 2em;
-  
+}
+#quote-section {
+  margin-top: 6em;
 }
 
 .subsection {
@@ -899,10 +901,11 @@ blockquote {
   font-weight: bold;
 }
 
-
+/*
 #dot-header{
   color: #41228e;
 }
+*/
 
 
 #dot-header-other{
