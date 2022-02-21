@@ -758,7 +758,7 @@ textarea.form-control {
 }
 
 /* Hide item on mobile  */
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .dont-show-mobile {
     display: none;
   }
