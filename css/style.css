@@ -757,6 +757,13 @@ textarea.form-control {
   }
 }
 
+/* Hide item on mobile  */
+@media (max-width: 767px) {
+  .dont-show-mobile {
+    display: none;
+  }
+}
+
 blockquote {
   display: inline-block;
   padding: 10px 20px;
