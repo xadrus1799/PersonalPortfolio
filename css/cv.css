@@ -96,3 +96,6 @@
         display: none;
     }
 }
+.text-left {
+  text-align: left;
+}
