@@ -754,6 +754,11 @@ textarea.form-control {
     flex-direction: column;
   }
 }
+@media (max-width: 900px) {
+  .dont-show-mobile {
+    display: none;
+  }
+}
 
 blockquote {
   display: inline-block;
