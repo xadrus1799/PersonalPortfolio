@@ -460,7 +460,7 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding: 300px 0 200px;
+  padding-top: 400px;
   position: relative;
   background-color: black;
   height: 100vh;
@@ -913,122 +913,94 @@ blockquote {
 #dot-header-other{
   color: white;
 }
-/******
-Moving Hero Animation
-******/
-
-
-/*wann wird der moving Text Teil gezeigt*/
-@media screen and (min-width: 0px) and (max-width: 1000px) {
-  .moving-text-wrapper { display: none; }  /* show it on small screens */
-}
-
-@media screen and (min-width: 1001px) and (max-width: 2000px) {
-  .moving-text-wrapper { display: inline-flex; }   /* hide it elsewhere */
-}
-/*wann wird der static Text Teil gezeigt*/
-@media screen and (min-width: 0px) and (max-width: 1080px) {
-  .static-text-wrapper { display: inline-flex; }  /* show it on small screens */
-}
-
-@media screen and (min-width: 1081px) and (max-width: 2000px) {
-  .static-text-wrapper { display: none; }   /* hide it elsewhere */
-}
-
-@media screen and (min-width: 360px) and (max-width: 500px) {
-  #static-text1 { 
-    font-size: 2.5em !important;
-  }
-  .static-text {
-    font-size: 2.5em !important;
-  }
-  .inline-flex {
-    display: inline-flex !important;
-    margin-left: +5px !important;
-  }
-  .mb-3 {
-    margin-left: 0.6em !important;
-  }
-  .mobile-header {
-    font-size: 2em !important;
-  }
-}
-
-
-
-
-.static-text-wrapper{
-  /*wird durch die media query befüllt*/
-}
-
-.moving-text-wrapper{
-  /*wird durch die media query befüllt */ 
-}
-
-
-#static-text1 {
-  list-style: none; 
-  font-size: 4em;
-  color: white;
-  font-weight: 500;
-  position: relative;
-  top: -0.5em;
-  left: 0;
-}
-
-
-.moving-text-wrapper .dynamic-texts {
-  height: 5em;
-  line-height: 5em;
-}
-/*Web Entwickler Text*/
-#moving-text1{
-  list-style: none; 
-  font-size: 4em;
-  color: #41228e;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  left: -0.5em;
-  animation: slide 2s steps(1) infinite;
-}
-
-.dynamic-texts li span{
-  position: relative;
-}
-
-/*Social Media Text*/
-#moving-text2{
-  list-style: none; 
-  font-size: 4rem;
-  color: #4295f5;
-  font-weight: 500;
-  position: relative;
-  top: 0;
-  left: -0.5em;
-  animation: slide 6s steps(1) infinite;
-}
-
-.dynamic-texts li span{
-  position: relative;
-}
-
-.dynamic-texts li span::after{
-  background: black;
-  left: 0;
-  content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  /*border-left: 2px solid white;*/
-  animation: typing 2s steps(22) infinite;
-}
-@keyframes typing {
-  100%{
-     left: 100%;
-  }
-}
 
 /********
-Moving Text Area End
+Moving Dots
 *********/
+.container-rings {
+  position: relative;
+  margin-left: 60%;
+  margin-top: -10%;
+  width: 100%;
+  display: flex;
+}
+.container-rings .ring {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: -30px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  border-top: 4px solid #24ecff;
+  animation: animate 4s linear infinite;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.container-rings .ring::before {
+  content: "";
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #24ecff;
+  box-shadow: 0 0 0 5px #24ecff33, 0 0 0 10px #24ecff22, 0 0 0 20px #24ecff11,
+    0 0 30px #24ecff, 0 0 50px #24ecff;
+}
+
+.container-rings .ring:nth-child(3) {
+  animation: animate2 4s linear infinite;
+  animation-delay: -3s;
+  position: absolute;
+  top: -66.66px;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #e41cf8;
+}
+.container-rings .ring:nth-child(3)::before {
+  content: "";
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #e41cf8;
+  box-shadow: 0 0 0 5px #e41cf833, 0 0 0 10px #e41cf822, 0 0 0 20px #e41cf811,
+    0 0 30px #e41cf8, 0 0 50px #e41cf8;
+}
+.container-rings .ring:nth-child(2) {
+  animation: animate2 4s linear infinite;
+  animation-delay: -1s;
+  border-top: 4px solid transparent;
+  border-left: 4px solid #93ff2d;
+}
+.container-rings .ring:nth-child(2)::before {
+  content: "";
+  position: absolute;
+  top: initial;
+  bottom: 12px;
+  left: 12px;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: #93ff2d;
+  box-shadow: 0 0 0 5px #93ff2d33, 0 0 0 10px #93ff2d22, 0 0 0 20px #93ff2d11,
+    0 0 30px #93ff2d, 0 0 50px #93ff2d;
+}
+@keyframes animate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
