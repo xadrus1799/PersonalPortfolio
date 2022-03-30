@@ -904,6 +904,14 @@ blockquote {
   font-weight: bold;
 }
 
+@media (max-width: 967px) {
+  .mobile-header {
+    font-size: 2em;
+  }
+}
+
+
+
 #dot-header{
   color: #41228e;
   animation-name: changeColor;
