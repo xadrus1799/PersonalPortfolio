@@ -945,8 +945,8 @@ Moving Dots
 *********/
 .container-rings {
   position: relative;
-  margin-left: 60%;
-  margin-top: -10%;
+  margin-left: 70%;
+  margin-top: -40%;
   width: 100%;
   display: flex;
 }
@@ -1029,4 +1029,25 @@ Moving Dots
   100% {
     transform: rotate(0deg);
   }
+}
+
+/************
+Word Cloud
+***********/
+
+ /* Applying CSS to sphere */ 
+ .tagcloud { 
+  display: inline-block; 
+  top: 5%;
+  left: 10%;
+  font-weight: bold; 
+  letter-spacing: 1px; 
+  font-size: 3em; 
+  font-family: "Times New Roman", Times, serif;
+} 
+
+/* Change color of each text in sphere on hover   */ 
+.tagcloud--item:hover { 
+  color: #FFC300; 
+cursor: pointer; 
 }
