@@ -475,7 +475,7 @@ textarea.form-control {
 }
 
 .hero-area {
-  padding-top: 400px;
+  padding-top: 15%;
   position: relative;
   background-color: black;
   height: 100vh;
@@ -487,8 +487,9 @@ textarea.form-control {
 
 @media (max-width: 767px) {
   .hero-area {
-    padding: 250px 0 150px;
+    padding: 130px 0 150px;
     overflow: hidden;
+    height: 150vh;
   }
 }
 
@@ -1062,7 +1063,7 @@ Word Cloud
   left: 10%;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 3em;
+  font-size: 2.2em;
   font-family: "Times New Roman", Times, serif;
 }
 
