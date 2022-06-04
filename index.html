@@ -65,8 +65,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-11 mx-auto">
-          <h1 class="text-white font-tertiary position static-text">Hi! Ich bin <br> Cedric, <span class="dont-show-pc">Web-Designer</span></h1>
-          <span class="Sphere dont-show-mobile"></span> 
+          <h1 class="text-white font-tertiary position static-text">Hi! Ich bin <br> Cedric, </br>Web-Designer</span></h1>
+          <!-- Canvas Spline -->
+          <canvas id="canvas3d"></canvas>
+          <!-- Canvas Spline -->
         </div>
       </div>
     </div>
@@ -287,41 +289,14 @@
     </div>
   </footer>
   <!-- /footer -->
-
-
-  <!-- inline Javascript -->
-
-  <!--- Word Cloud -->
-  <script src="https://cdn.jsdelivr.net/npm/TagCloud@2.2.0/dist/TagCloud.min.js"> </script> 
-  <script>
-        const Texts = [ 
-            'Developer', 'Social Media Marketer', 'Consultant', 
-            'Project Manager', 'Designer' 
-        ]; 
-
-        var tagCloud = TagCloud('.Sphere', Texts, { 
-
-            // Sphere radius in px 
-            radius: 200, 
-
-            // animation speed 
-            // slow, normal, fast 
-            maxSpeed: 'normal', 
-            initSpeed: 'fast', 
-
-            // Rolling direction [0 (top) , 90 (left), 135 (right-bottom)] 
-            direction: 135, 
-
-            // interaction with mouse or not [Default true (decelerate to rolling init speed, and keep rolling with mouse).] 
-            keep: true 
-
-        }); 
-
-        // Giving color to each text in sphere 
-        var color = 'white'; 
-        document.querySelector('.Sphere').style.color = color; 
-  </script>
-  <!-- Word Cloud -->
+    <!--- spline  vanilla js-->
+ <script type="module">
+      import { Application } from './runtime.js';
+      const canvas = document.getElementById('canvas3d');
+      const app = new Application(canvas);
+      app.load('./scene.splinecode');
+    </script>
+  <!-- spline -->
 
 
   
